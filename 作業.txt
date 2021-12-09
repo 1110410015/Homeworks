@@ -1,0 +1,15 @@
+int main()
+{
+    int a = 0, b = 0, ans = 0, c = 0;
+    std::cout << "請輸入2~10\n";
+    std::cin >> a;
+    std::cout << "這是一個告訴我們" << a << "的幾次方會超過10000多少的程式。\n\n";
+    while (ans < 10000)
+    {
+        ans = pow(a, b);
+        b = b++;
+    }
+    b = b--;
+    c = ans - 10000;
+    std::cout << a << "的" << b << "次方為" << ans << "超過了" << c << "\n";
+}
